@@ -1,38 +1,198 @@
-.App {
+
+
+.masjidImg{
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://cdn.cnn.com/cnnnext/dam/assets/141024172337-amazing-iranian-mosque-photos-16.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.asosiy{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title{
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  line-height: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.btn-circle{
+  margin-top: 50px;
+  padding: 15px 20px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.modal-body{
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+}
+
+.modal-footer{
+  display: flex;
+  justify-content: space-between !important;
+}
+
+.m-title{
+  height: 50px;
+  overflow: hidden;
+}
+
+.m-title-wrapper{
+  height: 100%;
+  animation: move 25s ease-in-out infinite alternate;
+  text-align: center;
+}
+
+.m-title-item{
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color:forestgreen;
+  text-align: center;
+}
+
+@keyframes move {
+  33%{
+    transform: translateY(-50px);
+  }
+  66%{
+    transform: translateY(-150px);
+  }
+  100%{
+    transform: translateY(-250px);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.counter-container{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url("https://images.squarespace-cdn.com/content/v1/5dd4e81669d1752e97b86f6b/1592463137095-F44D7PFDS6PNAKQF99HN/Blog+Header+Image+template.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  padding: 1.5rem 2.5rem;
+}
+
+.home{
+  text-align: right;
+  font-size: 1.5rem;
+}
+
+.home i{
+  color: gold;
+}
+
+.c-title{
+  text-align: center;
+  padding-top: 20px;
+  color:lightyellow;
+}
+
+.count-box{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 30px;
+}
+
+.counter-btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2.5rem;
+  margin-top: 20px;
+}
+
+.value{
+  font-size: 6rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.counter-btns button{
+  font-size: 1.3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.save{
+  font-size: 1.3rem;
+  margin-top: 30px;
+}
+
+.form-select{
+  margin-top: 30px;
+}
+
+.time{
+  font-size: 3rem;
+  color: white;
+  margin-top: 70px;
+  font-family:cursive;
+}
+
+.list-box{
+  background-color:darkslategray;
+  padding: 2rem;
+}
+
+.list-content{
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.box1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: darkcyan;
+  padding: .5rem 4rem;
+}
+.box1 h3{
+  font-size: 1.3rem;
+}
+
+.input-content{
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 30px;
+  padding: 1rem;
+}
+
+ul li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  padding: .5rem 1.5rem;
+  margin: 1rem;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  color: gray;
+}
+
+ol, ul {
+  padding-left: 0rem;
+}
+
+@media screen and (max-width: 768px) {
+  ul li{
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 50px;
   }
 }
