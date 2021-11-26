@@ -2,7 +2,7 @@
 
 .masjidImg{
   width: 100%;
-  height: 90vh;
+  height: 88vh;
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://cdn.cnn.com/cnnnext/dam/assets/141024172337-amazing-iranian-mosque-photos-16.jpg");
   background-position: center;
   background-size: cover;
@@ -17,6 +17,7 @@
   text-align: center;
   padding-top: 100px;
   line-height: 50px;
+  font-size: 2.1rem;
 }
 
 .btn-circle{
@@ -29,6 +30,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 12vh;
+
 }
 
 
@@ -136,10 +139,9 @@
 }
 
 .time{
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: white;
   margin-top: 70px;
-  font-family:cursive;
 }
 
 .list-box{
@@ -194,5 +196,11 @@ ol, ul {
   flex-direction: column;
   align-items: flex-start;
   line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title{
+    font-size: 1.3rem;
   }
 }
